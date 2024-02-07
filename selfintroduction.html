@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Team DTiG</title>
+    <link href="https://fonts.googlefonts.cn/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googlefonts.cn/css?family=Rock+Salt" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .img1{
+            width: 200px;
+            height: 200px;
+        }
+
+        .img2{
+            width: 200px;
+            height: 200px;
+        }
+
+        .navi {
+            padding-top: 1px;
+            height: 135px;
+            background-color: #1fa2ef;
+        }
+
+        .navi_title {
+            position: relative;
+            margin: 0;
+            left: 20px;
+            top: 5px;
+            font-size: 40px;
+            font-family: 'Rock Salt', cursive;
+            color: #fff;
+        }
+
+        .navi_pages {
+            list-style-type: none;
+            margin: 0;
+            direction: rtl;
+        }
+
+        .page {
+            display: inline-block;
+            padding: 10px;
+            font-size: 25px;
+            color: azure;
+            font-family: "阿里妈妈东方大楷 Regular";
+            text-shadow: 2px 2px 3px black;
+            transition: font-size 0.3s ease;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+        }
+
+        .memberIntro {
+            position: relative;
+            width: 50%;
+            font-size: 60px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .page:hover {
+            font-size: 30px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .navi_title {
+                font-size: 30px;
+            }
+
+            .page {
+                font-size: 20px;
+            }
+
+            .memberIntro{
+                font-size: 40px;
+            }
+
+            .img1, .img2, .img3 {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        @font-face {
+            font-family: "阿里妈妈东方大楷 Regular";font-weight: 400;src: url("//at.alicdn.com/wf/webfont/t9GfBwRHRtYB/GkP9Amb0VeF8.woff2") format("woff2"),
+        url("//at.alicdn.com/wf/webfont/t9GfBwRHRtYB/GLbA7XtMpeSm.woff") format("woff");
+            font-display: swap;
+        }
+    </style>
+</head>
+<body>
+<div class="navi">
+    <h1 class="navi_title">Team D|TiG</h1>
+    <div>
+        <ul class="navi_pages">
+            <li class="page" id="page3">联系我们</li>
+            <li class="page" id="page2">成员信息</li>
+            <li class="page" id="page1">团队简介</li>
+        </ul>
+    </div>
+</div>
+
+<div class="logo">
+    <img class="img1" src="图片1.png" alt="这是一张DTiGlogo图片">
+    <img class="img2" src="图片2.jpg" alt="这是一张DTiGlogo图片">
+    <img class="img3" src="图片3.png" alt="这是一张DTiGlogo图片">
+</div>
+
+<div>
+    <h1 class="memberIntro">我很神秘（</h1>
+</div>
+
+<img src="4cc773b0390ef5a67cfd6b74ae9cbf45a0663e352096153011729c3d627a03a9.gif" alt="My Animation">
+<img src="4e9d715ed922e154a3e086a88058d5ad462dc2f52b899a7e132b8492531ffa76.gif" alt="My Animation">
+<img src="5ceee9556417e6f01bdc3c9ff6160d34b1c8586b6866c43a7bfc3f1c8d045847.gif" alt="My Animation">
+<img src="9ea26d581ea44b39f5a674e498db15306b449bb25e26255b0d09cbf19a45b6ed.gif" alt="My Animation">
+<img src="10e4c188926a6f1e8c7a7219035a13400d93702b6023b9734bdb9b32662d5223.gif" alt="My Animation">
+<img src="18206f391bd428be23a7faf0a319d5057076649ff4f21e55337c6c8abf3c9b1d.gif" alt="My Animation">
+
+<script>
+    document.getElementById("page1").onclick = function () {
+        window.location.href = "index.html";
+    }
+    document.getElementById("page2").onclick = function () {
+        window.location.href = "selfintroduction.html";
+    }
+    document.getElementById("page3").onclick = function () {
+        window.location.href = "contactus.html";
+    }
+</script>
+</body>
+</html>
